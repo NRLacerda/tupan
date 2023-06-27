@@ -20,9 +20,12 @@ print('-------------------------------------------------')
 print("Insira a pasta da qual você deseja caçar")
 folder_path = input () # caminho q tu quer verificar
 print("Agora o formato")
-extensions = input () # aqui vai a extensão q vc quer procurar
-print("Aqui caminho"+folder_path+"Formato"+ extensions)
+extensions = ['.docx'] # aqui vai a extensão q vc quer procurar
+print('-------------------------------------------------')
+print("Caminho Selecionado: "+folder_path)
 matching_files = search_files(folder_path, extensions)
+print('-------------------------------------------------')
+
 
 if matching_files:
     print("Após algum tempo caçando isto foi o que encontramos:")
